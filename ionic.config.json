@@ -1,0 +1,7 @@
+{
+  "name": "tudu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
