@@ -1,17 +1,70 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
     </ion-title>
   </ion-toolbar>
+  <ion-button>
+    <ion-icon slot="icon-only" name="search"></ion-icon>
+  </ion-button>
 </ion-header>
+
+<ion-card class="justify-content-end bg-light">
+  <ion-card-header>
+    <ion-card-subtitle>Tarefas</ion-card-subtitle>
+    <ion-card-title>A FAZER</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+
+
+  <div class="container shadow mt-3 ">
+    <ion-card>
+      <ion-item>
+        <ion-checkbox color="primary"></ion-checkbox>
+        <ion-label>Desafio de Design UI/UX</ion-label>
+        <ion-button fill="outline" slot="end">View</ion-button>
+      </ion-item>
+
+      <ion-card-content>
+        descrição, descrição, descrição
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card >
+      <ion-item>
+        <ion-checkbox color="primary"></ion-checkbox>
+        <ion-label>Entrevista com a empresa</ion-label>
+        <ion-button fill="outline" slot="end">View</ion-button>
+      </ion-item>
+
+      <ion-card-content>
+        descrição, descrição, descrição
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-checkbox color="primary"></ion-checkbox>
+        <ion-label>Contratação</ion-label>
+        <ion-button fill="outline" slot="end">View</ion-button>
+      </ion-item>
+
+      <ion-card-content>
+        descrição, descrição, descrição
+      </ion-card-content>
+    </ion-card>
+
+
+
+  </div>
+  </ion-card-content>
+</ion-card>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Tudu Aplicativo de tarefas</ion-title>
     </ion-toolbar>
   </ion-header>
-
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
