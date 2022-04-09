@@ -24,3 +24,174 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+// container css global
+.titulo
+{
+  text-align: center;
+}
+
+.conteudo
+{
+  max-width: 500px;
+  margin: auto;
+  text-align: justify;
+  align-items: center;
+
+}
+
+body {
+  margin: 0;
+}
+
+a{
+  color:black;
+}
+
+.text-right{
+  position: absolute;
+  right: 630px;
+
+}
+
+h5{
+  color: #5d91e0;
+}
+
+form {
+  display: grid;
+  min-height: 30vh;
+}
+
+.form-control {
+  font-family:'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.form-control + .form-control {
+  margin-top: 1em;
+}
+
+.form-control--disabled {
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--form-background);
+  margin: 0;
+
+  font: inherit;
+  color: #FFF;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+
+  display: inline-flex;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+
+input[type="checkbox"]:disabled {
+  --form-control-color: var(--form-control-disabled);
+
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}
+
+.border{
+  border-radius: 15px;
+}
+
+.ion-color-#fe746f {
+	--ion-color-base: var(--ion-color-#fe746f);
+	--ion-color-base-rgb: var(--ion-color-#fe746f-rgb);
+	--ion-color-contrast: var(--ion-color-#fe746f-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-#fe746f-contrast-rgb);
+	--ion-color-shade: var(--ion-color-#fe746f-shade);
+	--ion-color-tint: var(--ion-color-#fe746f-tint);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.ion-color-new {
+	--ion-color-base: var(--ion-color-new-tint);
+	--ion-color-base-rgb: var(--ion-color-new-rgb);
+	--ion-color-contrast: var(--ion-color-new-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-new-contrast-rgb);
+	--ion-color-shade: var(--ion-color-new-shade);
+	--ion-color-tint: var(--ion-color-new-tint);
+}
+
+.ion-color-yellow {
+	--ion-color-base: var(--ion-color-yellow);
+	--ion-color-base-rgb: var(--ion-color-yellow-rgb);
+	--ion-color-contrast: var(--ion-color-yellow-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-yellow-contrast-rgb);
+	--ion-color-shade: var(--ion-color-yellow-shade);
+	--ion-color-tint: var(--ion-color-yellow-tint);
+}
+
+.ion-color-blue {
+	--ion-color-base: var(--ion-color-blue);
+	--ion-color-base-rgb: var(--ion-color-blue-rgb);
+	--ion-color-contrast: var(--ion-color-blue-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-blue-contrast-rgb);
+	--ion-color-shade: var(--ion-color-blue-shade);
+	--ion-color-tint: var(--ion-color-blue-tint);
+}
+
+:root{
+  --ion-font-family: font-family: 'Open Sans', sans-serif;
+  --form-control-color: #FFFF;
+  --form-control-disabled: #959495;
+  --ion-color-new: #FE746F;
+	--ion-color-new-rgb: 254,116,111;
+	--ion-color-new-contrast: #FFFF;
+	--ion-color-new-contrast-rgb: 0,0,0;
+	--ion-color-new-shade: #e06662;
+	--ion-color-new-tint: #fe827d;
+  --ion-color-yellow: #FEC857;
+	--ion-color-yellow-rgb: 254,200,87;
+	--ion-color-yellow-contrast: #FFFF;
+	--ion-color-yellow-contrast-rgb: 0,0,0;
+	--ion-color-yellow-shade: #e0b04d;
+	--ion-color-yellow-tint: #fece68;
+  --ion-color-blue: #6AA5FF;
+	--ion-color-blue-rgb: 106,165,255;
+	--ion-color-blue-contrast: #FFFF;
+	--ion-color-blue-contrast-rgb: 0,0,0;
+	--ion-color-blue-shade: #5d91e0;
+	--ion-color-blue-tint: #79aeff;
+
+}

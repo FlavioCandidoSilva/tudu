@@ -1,70 +1,72 @@
+<!-- Header da aplicação -->
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-    </ion-title>
-  </ion-toolbar>
-  <ion-button>
-    <ion-icon slot="icon-only" name="search"></ion-icon>
-  </ion-button>
-</ion-header>
 
-<ion-card class="justify-content-end bg-light">
-  <ion-card-header>
-    <ion-card-subtitle>Tarefas</ion-card-subtitle>
-    <ion-card-title>A FAZER</ion-card-title>
-  </ion-card-header>
-
-  <ion-card-content>
-
-
-  <div class="container shadow mt-3 ">
-    <ion-card>
-      <ion-item>
-        <ion-checkbox color="primary"></ion-checkbox>
-        <ion-label>Desafio de Design UI/UX</ion-label>
-        <ion-button fill="outline" slot="end">View</ion-button>
-      </ion-item>
-
-      <ion-card-content>
-        descrição, descrição, descrição
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card >
-      <ion-item>
-        <ion-checkbox color="primary"></ion-checkbox>
-        <ion-label>Entrevista com a empresa</ion-label>
-        <ion-button fill="outline" slot="end">View</ion-button>
-      </ion-item>
-
-      <ion-card-content>
-        descrição, descrição, descrição
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card>
-      <ion-item>
-        <ion-checkbox color="primary"></ion-checkbox>
-        <ion-label>Contratação</ion-label>
-        <ion-button fill="outline" slot="end">View</ion-button>
-      </ion-item>
-
-      <ion-card-content>
-        descrição, descrição, descrição
-      </ion-card-content>
-    </ion-card>
-
-
-
-  </div>
-  </ion-card-content>
-</ion-card>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tudu Aplicativo de tarefas</ion-title>
+      <ion-title class="titulo">Tarefas</ion-title>
     </ion-toolbar>
   </ion-header>
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+
+  <ion-content [fullscreen]="true">
+
+
+    <div class="container align-self-start mt-2 col-10 border bg-light">
+      <section>
+        <h2 class="titulo mt-3">Tarefas</h2>
+        <div class="conteudo text-justify-end">
+          <form method="post" class="container">
+            <div class="card-body">
+              <h5>A FAZER</h5>
+            </div>
+            <ion-card color="new" class="border mt-2 shadow">
+              <ion-item color="new">
+                <ion-label><input type="checkbox"> Desafio de Design UL/UX</ion-label>
+              </ion-item>
+              <ion-card-content>
+                <ion-card-subtitle>
+                  descrição, descrição, descrição.
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+
+            <ion-card color="yellow" class="border mt-3 shadow">
+              <ion-item color="yellow">
+                <ion-label><input type="checkbox"> Entrevista com a empresa</ion-label>
+              </ion-item>
+              <ion-card-content>
+                <ion-card-subtitle>
+                  descrição, descrição, descrição.
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+
+            <ion-card color="blue" class="ion-color-#fe746f border mt-3">
+              <ion-item color="blue">
+                <ion-label><input type="checkbox"> Contratação</ion-label>
+              </ion-item>
+              <ion-card-content>
+                <ion-card-subtitle>
+                  descrição, descrição, descrição.
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+          </form>
+          <div class="mt-3 text-right">
+            <a type="button">Ver Todos</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container mt-3">
+          <div class="conteudo text-justify-end">
+            <div class="card-body">
+              <h5>EM PROGRESSO</h5>
+            </div>
+            <form method="post" class="container">
+
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
