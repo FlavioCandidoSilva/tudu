@@ -1,0 +1,113 @@
+ion-content {
+  --background: #FFFF;
+}
+
+ion-slides {
+  height: 100%;
+  width: 100%;
+
+}
+
+h1 {
+  color: #5d91e0;
+  font-size: 40px;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+ion-button{
+  color: #5d91e0;
+}
+.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 75%;
+  margin: 0 auto;
+  z-index: 2;
+
+  &.top {
+      top: 5%;
+  }
+
+  &.bottom {
+      bottom: 30%;
+
+      span {
+          color: #fff;
+      }
+  }
+}
+
+ion-slides {
+  height: 100%;
+
+  .slide-inner {
+      width: 75%;
+      color: #fff;
+      background-color: #0072bc;
+      border-radius: 10px;
+
+      ion-item {
+          --background: rgba(255, 255, 255, 0.2);
+          --border-radius: 10px;
+
+          ion-input {
+              --color: #fff;
+          }
+      }
+  }
+}
+
+img{
+  width: 50%;
+}
+
+
+#pass {
+  width: 150px;
+  padding-right: 20px;
+}
+
+.olho {
+  cursor: pointer;
+  left: 160px;
+  position: absolute;
+  width: 20px;
+}
+
+
+#customBtn {
+  display: inline-block;
+  background: #4285f4;
+  color: white;
+  width: 250px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+#customBtn:hover {
+  cursor: pointer;
+}
+span.label {
+  font-weight: bold;
+}
+span.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 42px;
+  height: 42px;
+  border-right: #2265d4 1px solid;
+}
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 42px;
+  padding-right: 42px;
+  font-size: 14px;
+  font-weight: bold;
+  /* Use the Roboto font that is loaded in the <head> */
+  font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,126 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Slide 1 -->
+  <ion-slides>
+
+    <ion-slide class="bg-light">
+      <ion-text>
+        <h1>Bem vindo!</h1>
+        <img src="assets/img/146.jpg">
+        <p>Organize seu dia com Tudu</p>
+      </ion-text>
+    </ion-slide>
+
+    <!-- Slide 2 -->
+    <ion-slide>
+      <div>
+        <ion-item lines="none">
+          <h1 class="titulo mt-3">Entrar</h1>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-input type="text" placeholder="E-mail"></ion-input>
+        </ion-item>
+        <hr>
+        <ion-item lines="none">
+          <ion-input placeholder="Senha" type="password" id="pass"></ion-input> <img class=""
+            src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho"
+            class="olho">
+        </ion-item>
+        <hr>
+
+        <ion-button class="ion-button" style="color: aliceblue;" expand="block"> Entrar
+        </ion-button>
+        <hr>
+
+        <ion-item>
+          <div id="gSignInWrapper" class="mt-3 shadow">
+            <div id="customBtn" class="customGPlusSignIn card-header">
+              <ion-icon class="text-center " name="logo-google"></ion-icon>
+              <span class="buttonText"> Entrar com o Google
+              </span>
+            </div>
+          </div>
+        </ion-item>
+
+
+        <p class="mt-3 text-muted">Não tenho conta</p>
+      </div>
+    </ion-slide>
+
+
+    <ion-slide>
+      <div>
+        <ion-item lines="none">
+          <h1 class="titulo mt-3">Cadastrar</h1>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-input type="text" placeholder="Nome"></ion-input>
+        </ion-item>
+        <hr>
+
+        <ion-item lines="none">
+          <ion-input type="email" placeholder="E-mail"></ion-input>
+        </ion-item>
+        <hr>
+
+        <ion-item lines="none">
+          <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho"
+            class="olho">
+          <ion-input placeholder="Senha" type="password" id="pass"></ion-input>
+        </ion-item>
+        <hr>
+
+        <ion-item lines="none">
+          <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho"
+            class="olho">
+          <ion-input placeholder="Repetir senha" type="password" id="pass"></ion-input>
+        </ion-item>
+
+        <hr>
+
+        <ion-button class="ion-button" style="color: aliceblue;" expand="block"> Cadastrar
+        </ion-button>
+        <hr>
+
+        <ion-item>
+
+          <div id="gSignInWrapper" class="mt-3">
+            <div id="customBtn" class="customGPlusSignIn card-header">
+              <ion-icon class="text-center " name="logo-google"></ion-icon>
+              <span class="buttonText"> Cadastrar com o Google
+              </span>
+            </div>
+          </div>
+        </ion-item>
+        <p class="mt-3 text-muted">Já tenho conta</p>
+      </div>
+
+    </ion-slide>
+
+
+  </ion-slides>
+
+
+
+  <script>
+    document.getElementById('olho').addEventListener('mousedown', function () {
+      document.getElementById('pass').type = 'text';
+    });
+
+    document.getElementById('olho').addEventListener('mouseup', function () {
+      document.getElementById('pass').type = 'password';
+    });
+
+    document.getElementById('olho').addEventListener('mousemove', function () {
+      document.getElementById('pass').type = 'password';
+    });
+
+  </script>
+
+</ion-content>

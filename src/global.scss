@@ -43,6 +43,7 @@
 
 body {
   margin: 0;
+
 }
 
 a{
@@ -55,14 +56,24 @@ a{
 
 }
 
-h5{
+h3{
   color: #5d91e0;
+  font-family:'Open Sans', sans-serif;
+
 }
 
-form {
+ion-item{
+ border-radius: 15px;
+}
+
+
+.formHeader{
   display: grid;
   min-height: 30vh;
 }
+
+
+
 
 .form-control {
   font-family:'Open Sans', sans-serif;
@@ -90,7 +101,7 @@ input[type="checkbox"] {
   margin: 0;
 
   font: inherit;
-  color: #FFF;
+  color: #ece9ec;
   width: 1.15em;
   height: 1.15em;
   border: 0.15em solid currentColor;
@@ -171,9 +182,17 @@ input[type="checkbox"]:disabled {
 	--ion-color-tint: var(--ion-color-blue-tint);
 }
 
+
+.ion-card-subtitle{
+    font-weight: 200;
+    text-transform: none;
+}
+
+
+
 :root{
   --ion-font-family: font-family: 'Open Sans', sans-serif;
-  --form-control-color: #FFFF;
+  --form-control-color: green;
   --form-control-disabled: #959495;
   --ion-color-new: #FE746F;
 	--ion-color-new-rgb: 254,116,111;
@@ -195,3 +214,5 @@ input[type="checkbox"]:disabled {
 	--ion-color-blue-tint: #79aeff;
 
 }
+
+
