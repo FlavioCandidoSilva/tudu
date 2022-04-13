@@ -1,17 +1,57 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title class="titulo">
-      Tela de Tarefas
+      Planner
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <section class="container d-flex justify-content-center align-content mt-4">
+    <ion-item >
+      <ion-datetime class="bg-white text-center">
+        <div color="blue" slot="title">Planner</div>
+      </ion-datetime>
+    </ion-item>
+  </section>
+
+  <ion-item>
+    <div class="conteudo justify-content-end d-grid mt-3">
+        <ion-card color="new" class="border mt-2">
+          <ion-item color="new">
+            <ion-label>Desafio de Design UL/UX</ion-label>
+          </ion-item>
+          <ion-card-content>
+            <ion-card-subtitle class="text-center">
+              descrição, descrição, descrição.
+            </ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="yellow" class="border mt-3 shadow">
+          <ion-item color="yellow">
+            <ion-label>Entrevista com a empresa</ion-label>
+            <ion-icon name="calendar-number-outline"></ion-icon>
+          </ion-item>
+          <ion-card-content>
+            <ion-card-subtitle class="text-center">
+              descrição, descrição, descrição.
+            </ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="blue" class="ion-color-#fe746f border mt-3">
+          <ion-item color="blue">
+            <ion-label>Contratação</ion-label>
+          </ion-item>
+          <ion-card-content>
+            <ion-card-subtitle class="text-center">
+              descrição, descrição, descrição.
+            </ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+    </div>
+  </ion-item>
 
   <app-explore-container name="Tab 3 page"></app-explore-container>
 </ion-content>
